@@ -1,0 +1,14 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: employee-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
