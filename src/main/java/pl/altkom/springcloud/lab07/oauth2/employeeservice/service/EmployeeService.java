@@ -31,7 +31,7 @@ public class EmployeeService {
         return ResponseMapper.map(employee);
     }
 
-    public Employee addEmployee(final CreateEmployeeRequest request) {
+    public Employee createEmployee(final CreateEmployeeRequest request) {
         final pl.altkom.springcloud.lab07.oauth2.employeeservice.repository.model.Employee savedEmployee = employeeRepository
                 .save(RequestMapper.bind(request));
         return ResponseMapper.map(savedEmployee);
